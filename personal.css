@@ -719,6 +719,8 @@ margin-right: auto;
 
 /* SUPERPROF COUNTRY BUTTONS - FIXED */
 
+/* SPACE BETWEEN MAIN BUTTONS AND COUNTRY BUTTONS */
+
 .superprof-buttons {
 
 display: flex;
@@ -729,7 +731,7 @@ justify-content: center;
 
 gap: 12px;
 
-margin-top: 18px;
+margin-top: 28px;   /* əsas boşluq */
 
 }
 
