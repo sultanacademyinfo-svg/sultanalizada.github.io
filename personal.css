@@ -703,3 +703,16 @@ background: linear-gradient(
 );
 
 }
+
+/* TRIAL LESSON TOP FULL WIDTH */
+
+.pricing-card.highlight {
+
+grid-column: 1 / -1;
+
+max-width: 500px;
+
+margin-left: auto;
+margin-right: auto;
+
+}
