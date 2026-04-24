@@ -495,3 +495,48 @@ html {
   margin-right: auto;
   width: 100%;
 }
+
+/* LESSON BUTTONS */
+
+.lesson-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.lesson-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Packages button */
+
+.packages-btn {
+  background-color: #0d1b2a;
+  color: white;
+}
+
+.packages-btn:hover {
+  background-color: #1b263b;
+  transform: scale(1.05);
+}
+
+/* Superprof button */
+
+.superprof-btn {
+  background-color: #FF5959;
+  color: white;
+}
+
+.superprof-btn:hover {
+  background-color: #ff3b3b;
+  transform: scale(1.05);
+}
