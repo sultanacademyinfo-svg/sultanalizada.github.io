@@ -890,3 +890,38 @@ html, body {
         grid-column: auto; /* Mobildə normal axına qayıdır */
     }
 }
+
+.coffee-button {
+    display: inline-flex; /* Mətni və ikonu mərkəzləmək üçün */
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 12px 25px; /* Yanlardan bir az daha çox boşluq */
+    background-color: #ffdd00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
+    min-width: 200px; /* Düymənin enini sabitləyərək daha dolğun görünməsini təmin edir */
+    box-sizing: border-box; /* Padding-in enə təsirini nizamlayır */
+}
+
+.coffee-button:hover {
+    background-color: #ffd000;
+    transform: scale(1.05);
+}
+
+<div class="coffee-container" style="text-align: center;">
+    <h3>Support My Work</h3>
+    <p>If you find my lessons helpful, you can support my work here.</p>
+    
+    <a href="https://buymeacoffee.com/YOURNAME" class="coffee-button" target="_blank">
+        Buy Me a Coffee ☕
+    </a>
+
+    <div style="margin-top: 25px;">
+        <p style="font-size: 14px; color: #666;">Scan to buy me a coffee 👇</p>
+        <img src="qr-code.png" alt="QR Code" style="width: 150px; border-radius: 10px; margin-top: 10px;">
+    </div>
+</div>
