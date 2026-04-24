@@ -601,3 +601,25 @@ html {
   background-color: #1b263b;
   transform: scale(1.05);
 }
+
+/* PRICING GRID LAYOUT */
+
+.pricing-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 25px;
+
+  max-width: 1200px;
+
+  margin: 40px auto;
+}
+
+/* kartların width limitini silirik */
+
+.pricing-card {
+  max-width: none;
+  width: 100%;
+}
