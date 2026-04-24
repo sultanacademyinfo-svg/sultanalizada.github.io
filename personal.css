@@ -801,3 +801,53 @@ transform: translateY(-3px);
         text-align: center;
     }
 }
+
+/* Səhifənin sağa qaçmasının qarşısını alırıq */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Qiymət cədvəlinin ana qutusu */
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap; /* Mobildə alt-alta keçməsi üçün */
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Trial Lesson kartı - Tam en və mərkəzdə */
+.pricing-card.highlight {
+    flex: 0 1 100%; /* Mobildə tam sətiri tutur */
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Digər paketlər */
+.pricing-card {
+    flex: 1 1 250px; /* PC-də yan-yana, mobildə avtomatik ölçü */
+    max-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Mobil üçün xüsusi toxunuşlar */
+@media (max-width: 768px) {
+    .pricing-grid {
+        flex-direction: column; /* Kartları bir-birinin altına düzür */
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 350px; /* Mobildə çox enli olmasın */
+    }
+}
