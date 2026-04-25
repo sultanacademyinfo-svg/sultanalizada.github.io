@@ -1273,3 +1273,40 @@ html, body {
         background: transparent; /* Mobildə artıq dairə daxilində dairəyə ehtiyac yoxdur */
     }
 }
+
+.classroom-container {
+    margin: 20px 0;
+}
+
+.classroom-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #127344; /* Google Classroom Yaşılı */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid #0a4d2e; /* Düyməyə 3D effekti verir */
+}
+
+.classroom-btn i {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #f4b400; /* Loqonun sarı detalı üçün */
+}
+
+.classroom-btn:hover {
+    background-color: #1a8e56;
+    transform: translateY(-2px);
+    border-bottom-width: 2px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.classroom-btn:active {
+    transform: translateY(2px);
+    border-bottom-width: 0;
+    margin-bottom: 4px;
+}
