@@ -21,27 +21,27 @@
 <!-- NAVIGATION -->
 <header
     <nav class="navbar">
-        <div class="logo">Sultan Alizada</div>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+    <div class="logo">Sultan Alizada</div>
+    
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 
-        <ul class="nav-list" id="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#german">German</a></li>
-            <li><a href="#english">English</a></li>
-            <li><a href="#turkish-az">Turkish/Azerbaijani</a></li>
-            <li><a href="#coaching">Coaching</a></li>
-            <li><a href="#book-lesson">Book a Lesson</a></li>
-            <li><a href="#coming-soon" style="color: #ffdd00;">Coming soon!</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-list" id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#german">German</a></li>
+        <li><a href="#english">English</a></li>
+        <li><a href="#turkish-az">Turkish/Azerbaijani</a></li>
+        <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#book-lesson">Book a Lesson</a></li>
+        <li><a href="#coming-soon" style="color: #ffdd00 !important;">Coming soon!</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
  </header> 
 
 <!-- HOME / HERO -->
@@ -639,6 +639,22 @@ WhatsApp
             });
         });
     });
+</script>  
+
+<script>
+    const menu = document.querySelector('#mobile-menu');
+    const navList = document.querySelector('#nav-list');
+
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active'); // Hamburgeri X edir
+        navList.classList.toggle('active'); // Menyunun özünü açır
+    });
+
+    // Menyu daxilində nəsə basanda bağlansın
+    document.querySelectorAll('.nav-list a').forEach(n => n.addEventListener('click', () => {
+        menu.classList.remove('is-active');
+        navList.classList.remove('active');
+    }));
 </script>  
 
 </body>
