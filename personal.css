@@ -1311,3 +1311,97 @@ html, body {
     margin-bottom: 4px;
 }
 
+
+/* --- NAVIGATION STRUCTURE --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%; /* Kənarlardan boşluğu azaltdıq ki, yer çoxalsın */
+    background-color: #0d1b2a;
+    position: fixed; /* Yuxarıda sabit qalsın */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 8px; /* Düymələr arası məsafəni optimallaşdırdıq */
+}
+
+/* PC-də Ağ Rəngli Yazılar */
+.nav-list li a {
+    color: #ffffff !important; /* Mütləq ağ rəng */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 11px; /* 30% kiçik şrift (hər şeyin sığması üçün) */
+    white-space: nowrap; /* Yazıların aşağı düşməsini önləyir */
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #3498db !important; /* Üstünə gələndə göyümtül rəng */
+}
+
+/* PC-də Hamburgeri Gizlət */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+}
+
+/* --- MOBİL ÜÇÜN DÜZƏLİŞLƏR --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 2100;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .nav-list {
+        display: none; /* Mobildə yalnız klikləyəndə açılsın */
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #0d1b2a;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1500;
+    }
+
+    .nav-list.active {
+        display: flex !important;
+    }
+
+    .nav-list li {
+        margin: 15px 0;
+    }
+
+    .nav-list li a {
+        font-size: 1.2rem;
+    }
+}
