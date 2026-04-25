@@ -618,6 +618,28 @@ WhatsApp
     });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+        const navLinks = document.querySelectorAll('.nav-list a');
+
+        // Hamburgerə basanda
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('is-active'); // Hamburgeri X edir
+            navList.classList.toggle('active'); // Menyu barı gətirir
+        });
+
+        // Menyu daxilində linkə basanda avtomatik bağla
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('is-active');
+                navList.classList.remove('active');
+            });
+        });
+    });
+</script>  
+
 </body>
 
 </html>
