@@ -1109,3 +1109,15 @@ html, body {
     transform: scale(1.1);
     opacity: 0.9;
 }
+
+/* Testimonials hissəsindəki mətnlərin tündləşdirilməsi */
+#testimonials p, 
+#testimonials span, 
+#testimonials div {
+    color: #222222 !important; /* Çox tünd boz/qara rəng */
+}
+
+/* Əgər Cusdis vidjetini tündləşdirmək istəyirsənsə */
+#cusdis_thread {
+    color: #222222 !important;
+}
