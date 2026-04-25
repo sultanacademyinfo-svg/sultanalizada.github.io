@@ -572,6 +572,26 @@ WhatsApp
 
 </a>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const wechatBtn = document.getElementById('wechatBtn');
+        const wechatPopup = document.getElementById('wechatPopup');
+
+        // İkona klikləyəndə popupu aç/bağla
+        wechatBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Klikin wrapper-ə yayılmasını dayandır
+            wechatPopup.classList.toggle('active');
+        });
+
+        // Səhifənin istənilən yerinə (popupdan kənar) klikləyəndə popupu bağla
+        document.addEventListener('click', function(e) {
+            if (!wechatPopup.contains(e.target) && wechatPopup.classList.contains('active')) {
+                wechatPopup.classList.remove('active');
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
