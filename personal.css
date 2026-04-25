@@ -1170,3 +1170,60 @@ html, body {
     visibility: visible;
     opacity: 1;
 }
+
+.wechat-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* WeChat İkonu üçün pointer kursoru */
+#wechatBtn {
+    cursor: pointer;
+}
+
+/* QR Kod Popup - Arxa fonsuz və təmiz */
+.wechat-qr-popup {
+    position: absolute;
+    bottom: 60px; /* İkonun üstündə açılması üçün */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    
+    /* Arxa fon, kənarlıq və kölgələr silindi */
+    background: transparent; 
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    /* İlkin vəziyyətdə gizli */
+    visibility: hidden;
+    opacity: 0;
+    
+    /* Zərif açılış effekti */
+    transition: all 0.3s ease;
+    z-index: 100;
+    width: 160px; /* QR kodun ölçüsü */
+    text-align: center;
+}
+
+/* Popup aktiv olanda (JavaScript ilə əlavə ediləcək class) */
+.wechat-qr-popup.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.wechat-qr-popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* QR kodun künclərini bir az yumşaldaq */
+}
+
+.wechat-qr-popup span {
+    display: block;
+    color: #ffffff; /* Ağ rəng etdim, əgər contact fondu tünddürsə */
+    /* Əgər contact fondu açıqdırsa, rəngi tündləşdir: color: #333; */
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Yazının oxunması üçün xəfif kölgə */
+}
