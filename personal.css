@@ -1405,3 +1405,8 @@ html, body {
         font-size: 1.2rem;
     }
 }
+
+#english {
+    background-color: #0b3d6d; /* tünd göy */
+    padding: 60px 20px;
+}
