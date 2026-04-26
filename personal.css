@@ -1520,3 +1520,12 @@ html, body {
 .pricing-card li {
     color: #222 !important;
 }
+
+/* Paket kartlarının daxilindəki qiymət hissəsi */
+.pricing-card .price {
+    color: #000000 !important; /* Tam tünd qara */
+    font-size: 1.8rem !important; /* Bir az daha böyük */
+    font-weight: 800 !important;  /* Daha qalın/bold */
+    margin: 15px 0 !important;
+    display: block;
+}
