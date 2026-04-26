@@ -1404,17 +1404,18 @@ html, body {
     .nav-list li a {
         font-size: 1.2rem;
       
-/* ENGLISH SECTION DARK BACKGROUND */
-
-.section#english {
-    background-color: #0b3d6d !important;
-    padding: 60px 20px;
+#german {
+    background-color: white;
 }
 
-.section#english h2 {
-    color: white;
+#english {
+    background-color: #0b3d6d;
 }
 
-.section#english p {
-    color: #e6eef7;
+#turkish-az {
+    background-color: white;
+}
+
+#coaching {
+    background-color: #0b3d6d;
 }
