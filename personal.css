@@ -1450,3 +1450,32 @@ html, body {
     margin: 20px auto;
     max-width: 900px;
 }
+
+/* FLEXIBLE SECTION BACKGROUND SYSTEM */
+
+/* əsas section — fon default boş qalır */
+.section {
+    padding: 60px 20px;
+}
+
+/* açıq fon */
+.section-light {
+    background-color: white;
+}
+
+/* tünd fon */
+.section-dark {
+    background-color: #0b3d6d;
+    color: white;
+}
+
+/* tünd fon içində mətn */
+.section-dark p {
+    color: #e6eef7;
+}
+
+/* kartlar həmişə ağ qalsın */
+.pricing-card {
+    background-color: white;
+    border-radius: 12px;
+}
