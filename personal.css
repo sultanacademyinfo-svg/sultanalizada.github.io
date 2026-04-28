@@ -1357,3 +1357,12 @@ html, body {
 .instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
 .telegram { background-color: #0088cc; }
 .xiaohongshu { background-color: #ff2442; } /* Xiaohongshu-nun xarakterik qırmızı rəngi */
+
+/* Həm köhnə, həm yeni təqvim üçün mərkəzləmə */
+.calendar-container, #my-cal-inline-60 {
+    max-width: 1000px; /* Bir az daha geniş etmək təqvimi daha oxunaqlı edir */
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
