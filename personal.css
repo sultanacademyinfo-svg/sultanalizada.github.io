@@ -226,20 +226,6 @@ width: 140px;
 
 }
 
-.nav-menu {
-
-flex-direction: column;
-
-gap: 10px;
-
-}
-
-.hero {
-
-padding-top: 140px;
-
-}
-
 }
 
 .coffee-container {
@@ -351,14 +337,30 @@ html {
   scroll-padding-top: 90px;
 }
 
-/* 2. Navbarı incəltmək və yazıları mərkəzləmək */
+/* 2. Navbarı incəltmək və elementləri düzgün yerləşdirmək */
 .navbar {
-  padding: 8px 0;
+  padding: 8px 3%; /* Kənarlardan xəfif boşluq */
   background-color: rgba(13, 27, 42, 0.98);
+  display: flex;
+  justify-content: space-between; /* Loqo solda, menyu sağda qalsın */
+  align-items: center;
 }
 
-.nav-menu a {
+/* NAV-MENU ƏVƏZİNƏ NAV-LIST İSTİFADƏ EDİRİK */
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* MENYUNU SAĞA İTƏLƏYƏN ƏSAS KOD */
+}
+
+.nav-list a {
   font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* 3. Mobil mərkəzləşdirmə və Hero (Şəkil) tənzimləməsi */
@@ -367,18 +369,21 @@ html {
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Hər şeyi mərkəzə çəkir */
+    align-items: center;
     text-align: center;
   }
 
-  .nav-menu {
+  /* Mobildə nav-list-in alt-alta və mərkəzdə durması üçün */
+  .nav-list {
+    flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 5px 0;
+    gap: 15px;
+    padding: 10px 0;
+    margin-left: 0; /* Mobildə sağa yapışmasın, mərkəzləşsin */
   }
 
   .hero {
-    padding-top: 130px; /* Menyu şəkli örtməsin deyə */
+    padding-top: 130px; /* Navbarın altına girməməsi üçün */
   }
 
   .profile-photo {
