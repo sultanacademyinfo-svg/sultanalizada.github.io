@@ -1588,3 +1588,22 @@ img {
 
 }
 
+header {
+
+    width: 100%;
+
+    background: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
