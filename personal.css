@@ -1569,3 +1569,8 @@ body {
 html {
     scroll-padding-top: 80px;
 }
+
+.social-icon.whatsapp i {
+    color: white !important; /* İkonun mütləq ağ görünməsi üçün */
+    font-size: 24px;         /* Ölçüsünü digərləri ilə eyniləşdir */
+}
