@@ -1562,3 +1562,12 @@ body {
 
 }
 
+/* Hero hissəsinin menyu altında qalmaması üçün yuxarıdan boşluq */
+.hero {
+    padding-top: 100px !important; 
+}
+
+/* Linkə klikləyəndə başlığın menyu altında qalmaması üçün */
+html {
+    scroll-padding-top: 80px;
+}
