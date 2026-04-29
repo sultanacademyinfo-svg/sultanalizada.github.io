@@ -1572,3 +1572,63 @@ body {
     overflow-x: hidden;
 
 }
+
+/* NAVBAR — TAM STABIL FIX */
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    z-index: 9999;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 15px 20px;
+
+}
+
+/* LOGO solda qalır */
+
+.logo {
+
+    font-weight: bold;
+
+    font-size: 20px;
+}
+
+/* MENYU sağa itələnir */
+
+.nav-list {
+
+    display: flex;
+
+    gap: 18px;
+
+    list-style: none;
+
+    margin-left: auto;   /* ƏSAS SƏTİR — sağa aparır */
+
+    padding: 0;
+
+}
+
