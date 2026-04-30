@@ -1712,3 +1712,29 @@ header {
 
     width: 100%;
 }
+
+/* NAVBAR üçün xüsusi header */
+header:not(#home) {
+
+    background: #0d6efd;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+}
+
+/* iç content mərkəzdə qalır */
+header:not(#home) .navbar {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 20px;
+}
