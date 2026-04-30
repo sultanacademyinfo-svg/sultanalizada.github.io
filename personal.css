@@ -1557,3 +1557,61 @@ html {
         max-width: 380px !important;
     }
 }
+
+/* ===== GLOBAL KART DİZAYNI (HƏM CONTACT, HƏM PACKAGES ÜÇÜN) ===== */
+.pricing-card, .contact-card, [class*="card"] {
+    background: #ffffff !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+    border: 1px solid #eee !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: 0.3s !important;
+}
+
+/* ===== PAKETLƏRİ MƏRKƏZLƏYƏN SİSTEM ===== */
+.pricing-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; /* MƏRKƏZƏ ÇƏKİR */
+    gap: 25px !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+}
+
+.pricing-card {
+    width: 300px !important; /* Paketlərin eni */
+    text-align: center !important;
+    align-items: center !important;
+}
+
+/* Trial Lesson (Xüsusi vurğulanan kart) */
+.pricing-card.highlight {
+    flex: 0 1 100% !important;
+    max-width: 500px !important;
+    border: 2px solid #ff4d4d !important;
+}
+
+/* Kontakt ikonları və mətni üçün düzəliş */
+.pricing-card ul, .contact-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 15px 0 !important;
+    text-align: center !important;
+}
+
+.pricing-card a, .pricing-button {
+    text-decoration: none !important;
+    color: #007bff !important;
+    font-weight: bold !important;
+    margin-top: 10px !important;
+}
+
+/* Mobildə hər şeyi tək sütun və mərkəz et */
+@media (max-width: 768px) {
+    .pricing-card {
+        width: 100% !important;
+        max-width: 350px !important;
+    }
+}
