@@ -1,0 +1,1785 @@
+/* GLOBAL STABILITY FIX */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* sola sürüşməni öldürür */
+}
+
+/* Bütün section-ları mərkəzləşdirir */
+
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+
+
+html {
+
+scroll-behavior: smooth;
+
+}
+
+body {
+
+margin: 0;
+
+font-family: Arial, Helvetica, sans-serif;
+
+background-color: #e6f2ff;
+
+color: #222;
+
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d1b2a;
+    padding: 10px 5%; /* Kənarlardan boşluq */
+    z-index: 9999;    /* Həmişə ən üstdə qalması üçün */
+    display: flex;
+    justify-content: space-between; /* Loqo solda, menyu sağda */
+    align-items: center;
+    box-sizing: border-box; /* Enin kənara daşmaması üçün */
+}
+
+.nav-container {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+width: 90%;
+
+margin: auto;
+
+}
+
+.logo {
+
+color: white;
+
+font-size: 20px;
+
+font-weight: bold;
+
+}
+
+/* HTML-DƏ NAV-LIST YAZMISAN, ONA GÖRƏ BURADA DA EYNİ OLMALIDIR */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Düymələr arası məsafə */
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* MENYUNU SAĞA İTƏLƏYƏN ƏSAS KOD */
+}
+
+.nav-list li a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #ffdd00 !important; /* Üstünə gələndə rəng dəyişsin */
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    padding-top: 140px !important; /* Navbarın hündürlüyündən daha çox boşluq */
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.profile-photo {
+
+width: 220px;
+
+height: auto;
+
+border-radius: 50%;
+
+margin-bottom: 20px;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.tagline {
+
+font-size: 18px;
+
+max-width: 600px;
+
+margin: auto;
+
+}
+
+/* SECTIONS */
+
+.section {
+
+padding: 80px 20px;
+
+text-align: center;
+
+}
+
+.section:nth-child(even) {
+
+background-color: #ffffff;
+
+}
+
+.section h2 {
+
+margin-bottom: 20px;
+
+}
+
+/* FOOTER */
+
+.footer {
+
+background-color: #0d1b2a;
+
+color: white;
+
+text-align: center;
+
+padding: 20px;
+
+}
+
+.whatsapp-button {
+
+position: fixed;
+
+bottom: 20px;
+
+right: 20px;
+
+background-color: #25D366;
+
+color: white;
+
+padding: 14px 18px;
+
+border-radius: 30px;
+
+font-weight: bold;
+
+text-decoration: none;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+z-index: 1000;
+
+}
+
+.whatsapp-button:hover {
+
+background-color: #1ebe5d;
+
+}
+
+.testimonial {
+
+background-color: white;
+
+padding: 20px;
+
+margin: 20px auto;
+
+max-width: 600px;
+
+border-radius: 10px;
+
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+@media (max-width: 768px) {
+
+.profile-photo {
+
+width: 140px;
+
+}
+
+}
+
+.coffee-container {
+
+margin-top: 40px;
+
+padding: 25px;
+
+background-color: #ffffff;
+
+border-radius: 12px;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+max-width: 500px;
+
+margin-left: auto;
+
+margin-right: auto;
+
+}
+
+.coffee-button {
+
+display: inline-block;
+
+margin-top: 15px;
+
+padding: 12px 22px;
+
+background-color: #ffdd00;
+
+color: black;
+
+font-weight: bold;
+
+text-decoration: none;
+
+border-radius: 8px;
+
+transition: 0.2s;
+
+}
+
+.coffee-button:hover {
+
+background-color: #ffd000;
+
+transform: scale(1.05);
+
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  header {
+    position: relative;
+  }
+
+  .hero {
+    margin-top: 80px;
+  }
+
+}
+
+/* TESTIMONIALS - bigger visible area */
+#cusdis_thread {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 600px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+  #cusdis_thread {
+    min-height: 500px;
+    padding: 10px;
+  }
+
+
+/* TESTIMONIALS FULL VIEW FIX */
+
+#cusdis_thread {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cusdis internal container */
+#cusdis_thread iframe {
+  width: 100% !important;
+  height: 900px !important;
+  max-height: none !important;
+}
+
+/* Remove inner scroll feeling */
+#cusdis_thread .cusdis-container {
+  max-height: none !important;
+}
+
+
+/* --- YENİ OPTİMALLAŞDIRMA --- */
+
+/* 1. Klikləyəndə başlığın menyu altında qalmaması üçün */
+html {
+  scroll-padding-top: 90px;
+}
+
+/* 2. Navbarı incəltmək və elementləri düzgün yerləşdirmək */
+.navbar {
+  padding: 8px 3%; /* Kənarlardan xəfif boşluq */
+  background-color: rgba(13, 27, 42, 0.98);
+  display: flex;
+  justify-content: space-between; /* Loqo solda, menyu sağda qalsın */
+  align-items: center;
+}
+
+/* NAV-MENU ƏVƏZİNƏ NAV-LIST İSTİFADƏ EDİRİK */
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* MENYUNU SAĞA İTƏLƏYƏN ƏSAS KOD */
+}
+
+.nav-list a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 3. Mobil mərkəzləşdirmə və Hero (Şəkil) tənzimləməsi */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Mobildə nav-list-in alt-alta və mərkəzdə durması üçün */
+  .nav-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    margin-left: 0; /* Mobildə sağa yapışmasın, mərkəzləşsin */
+  }
+
+  .hero {
+    padding-top: 130px; /* Navbarın altına girməməsi üçün */
+  }
+
+  .profile-photo {
+    width: 150px;
+  }
+}
+
+/* 4. Kontakt bölməsi üçün loqolu linklərin stilləri */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.whatsapp { background-color: #25D366; }
+.youtube { background-color: #FF0000; }
+.superprof { background-color: #FF5959; font-weight: bold; }
+
+/* 5. Calendly və Testimonials mərkəzləşdirmə */
+.calendly-full-container, #cusdis_thread {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* LESSON BUTTONS */
+
+.lesson-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.lesson-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Packages button */
+
+.packages-btn {
+  background-color: #0d1b2a;
+  color: white;
+}
+
+.packages-btn:hover {
+  background-color: #1b263b;
+  transform: scale(1.05);
+}
+
+/* Superprof button */
+
+.superprof-btn {
+  background-color: #FF5959;
+  color: white;
+}
+
+.superprof-btn:hover {
+  background-color: #ff3b3b;
+  transform: scale(1.05);
+}
+
+/* PRICING SECTION */
+
+#packages {
+  background-color: #f4f7fb;
+}
+
+.pricing-card {
+  background-color: white;
+  padding: 28px;
+  margin: 20px auto;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+}
+
+.highlight {
+  border: 2px solid #FF5959;
+}
+
+.pricing-card h3 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 18px 0;
+  color: #0d1b2a;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.pricing-card li {
+  margin: 8px 0;
+}
+
+.pricing-button {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #0d1b2a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.pricing-button:hover {
+  background-color: #1b263b;
+  transform: scale(1.05);
+}
+
+/* PRICING GRID LAYOUT */
+
+.pricing-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 25px;
+
+  max-width: 1200px;
+
+  margin: 40px auto;
+}
+
+/* kartların width limitini silirik */
+
+.pricing-card {
+  max-width: none;
+  width: 100%;
+}
+
+/* SUPERPROF COUNTRY BUTTONS */
+
+.superprof-country-grid {
+
+display: grid;
+
+grid-template-columns:
+repeat(auto-fit, minmax(170px, 1fr));
+
+gap: 14px;
+
+margin-top: 18px;
+
+max-width: 850px;
+
+margin-left: auto;
+margin-right: auto;
+
+}
+
+/* BUTTON STYLE */
+
+.country-superprof-btn {
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 10px;
+
+padding: 12px 16px;
+
+background: linear-gradient(
+135deg,
+#ff5959,
+#ff7a7a
+);
+
+color: white;
+
+font-weight: bold;
+
+border-radius: 10px;
+
+text-decoration: none;
+
+transition: 0.25s;
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.15);
+
+}
+
+/* FLAG */
+
+.flag {
+
+font-size: 18px;
+
+}
+
+/* HOVER EFFECT */
+
+.country-superprof-btn:hover {
+
+transform: translateY(-4px);
+
+box-shadow:
+0 8px 18px rgba(0,0,0,0.2);
+
+background: linear-gradient(
+135deg,
+#ff3b3b,
+#ff5959
+);
+
+}
+
+/* TRIAL LESSON TOP FULL WIDTH */
+
+.pricing-card.highlight {
+
+grid-column: 1 / -1;
+
+max-width: 500px;
+
+margin-left: auto;
+margin-right: auto;
+
+}
+
+/* SUPERPROF COUNTRY BUTTONS - FIXED */
+
+/* SPACE BETWEEN MAIN BUTTONS AND COUNTRY BUTTONS */
+
+.superprof-buttons {
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: center;
+
+gap: 12px;
+
+margin-top: 36px;   /* əsas boşluq */
+
+}
+
+/* BUTTON */
+
+.superprof-country-btn {
+
+display: inline-block;
+
+padding: 12px 18px;
+
+background-color: #FF5959;
+
+color: white;
+
+font-weight: bold;
+
+text-decoration: none;
+
+border-radius: 8px;
+
+transition: 0.25s;
+
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+/* HOVER */
+
+.superprof-country-btn:hover {
+
+background-color: #ff3b3b;
+
+transform: translateY(-3px);
+
+}
+
+.superprof-country-grid {
+  margin-bottom: 36px;
+}
+
+/* Düymələr arası məsafə və mobil optimizasiya */
+.packages-btn {
+    margin-top: 25px !important; /* Qırmızı düymələrdən aralı durması üçün */
+    display: inline-block;
+}
+
+.superprof-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Mobil telefonlar üçün xüsusi ayar */
+@media (max-width: 768px) {
+    .superprof-country-btn {
+        width: 45%; /* Mobil ekranda düymələr yan-yana 2-2 düzülsün */
+        font-size: 13px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    
+    .packages-btn {
+        width: 80%; /* Tünd düymə mobildə daha geniş görünsün */
+        text-align: center;
+    }
+}
+
+/* Səhifənin sağa qaçmasının qarşısını alırıq */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Qiymət cədvəlinin ana qutusu */
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap; /* Mobildə alt-alta keçməsi üçün */
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Trial Lesson kartı - Tam en və mərkəzdə */
+.pricing-card.highlight {
+    flex: 0 1 100%; /* Mobildə tam sətiri tutur */
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Digər paketlər */
+.pricing-card {
+    flex: 1 1 250px; /* PC-də yan-yana, mobildə avtomatik ölçü */
+    max-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Mobil üçün xüsusi toxunuşlar */
+@media (max-width: 768px) {
+    .pricing-grid {
+        flex-direction: column; /* Kartları bir-birinin altına düzür */
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 350px; /* Mobildə çox enli olmasın */
+    }
+}
+
+/* PC və Mobil üçün Səliqəli Düzülüş */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 400px)); /* PC-də 2-li sütun */
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Trial Lesson: Hər zaman yuxarıda tək */
+.pricing-card.highlight {
+    grid-column: 1 / -1; /* Bütün sətiri tutur */
+    max-width: 450px;
+    margin: 0 auto 10px auto;
+    border: 2px solid #FF5959;
+}
+
+/* Bütün kartlar üçün ortaq stil */
+.pricing-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    transition: 0.25s;
+    text-align: center;
+}
+
+/* Mobil görünüşü üçün */
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr; /* Mobildə hamısı 1-li sütun */
+    }
+    .pricing-card.highlight {
+        grid-column: auto; /* Mobildə normal axına qayıdır */
+    }
+}
+
+.coffee-button {
+    display: inline-flex; /* Yazı və ikonun yan-yana və mərkəzdə durması üçün */
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 14px 28px; /* Daxili boşluğu artırdıq ki, mətn nəfəs alsın */
+    background-color: #ffdd00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px; /* Daha müasir görünüş */
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    min-width: 220px; /* Düymənin daralmasının qarşısını alır */
+    box-shadow: 0 4px 0px #b39b00; /* Alt hissəsinə dərinlik verən kölgə */
+}
+
+.coffee-button:hover {
+    background-color: #ffea00;
+    transform: translateY(-3px); /* Yuxarı qalxma effekti */
+    box-shadow: 0 6px 0px #b39b00;
+}
+
+.coffee-button:active {
+    transform: translateY(2px); /* Klikləyəndə basılma effekti */
+    box-shadow: 0 2px 0px #b39b00;
+}
+}
+
+<div class="coffee-container" style="text-align: center; border: 2px dashed #ffdd00;">
+    <h3>Support My Work</h3>
+    <p>If you find my lessons helpful, you can support my work here.</p>
+    
+    <a href="https://buymeacoffee.com/YOURNAME" class="coffee-button" target="_blank">
+        Buy Me a Coffee ☕
+    </a>
+
+    <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <p style="font-size: 13px; color: #777; margin-bottom: 10px;">Scan QR to support quickly 👇</p>
+        <img src="qr-code.png" alt="Donate QR" style="width: 160px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+    </div>
+</div>
+
+/* Learn German daxilindəki 4-lü kart düzülüşü */
+#german .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#german .pricing-card {
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+#german .pricing-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Premium Paket Özəl Stili */
+.premium-highlight {
+    border: 2px solid #FFD700 !important; /* Qızılı rəng çərçivə */
+    background: linear-gradient(180deg, #ffffff 0%, #fffdf2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-highlight .badge {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background: #FFD700;
+    color: #000;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.premium-btn {
+    background: linear-gradient(135deg, #FFD700, #ffcc00) !important;
+    color: black !important;
+    border: none;
+}
+
+.premium-btn:hover {
+    background: #ffcc00 !important;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Learn German daxilindəki 5 kartın PC-də düzülüşü */
+@media (min-width: 1024px) {
+    #german .pricing-grid {
+        grid-template-columns: repeat(3, 1fr); /* İlk sətirdə 3 kart, ikinci sətirdə 2 kart mərkəzdə */
+    }
+}
+
+/* Premium Kartı Ümumi Mərkəzləmə */
+.premium-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.premium-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Daxili elementləri mərkəzləyir */
+    text-align: center;
+    max-width: 500px; /* Kartın enini məhdudlaşdırırıq ki, çox yayılmasın */
+    border: 2px solid #FFD700 !important;
+    background: linear-gradient(180deg, #ffffff 0%, #fffdf2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dekorativ Lent */
+.premium-highlight .badge {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #FFD700;
+    width: 120px;
+    height: 25px;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.premium-subtitle {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.premium-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 25px 0;
+}
+
+.premium-features li {
+    margin: 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Bayraqların ölçüsü */
+.premium-features li br + text, 
+.premium-features li:nth-child(3) {
+    font-size: 22px; 
+    display: block;
+    margin-top: 5px;
+}
+
+.premium-btn {
+    width: 100%;
+    max-width: 280px; /* Düyməni çox uzatmırıq */
+    background: linear-gradient(135deg, #FFD700, #ffcc00) !important;
+    color: black !important;
+    border: none;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.premium-btn:hover {
+    transform: scale(1.05);
+    background: #ffcc00 !important;
+}
+
+/* Yeni Sosial Media Rəngləri */
+
+/* WhatsApp İkonu üçün Yaşıl Fon */
+.social-icon.whatsapp {
+    background-color: #25D366; /* WhatsApp-ın rəsmi yaşıl rəngi */
+    color: white;
+}
+
+/* Əgər ikon yenə kiçik və ya fərqli rəngdədirsə bu kömək edəcək */
+.social-icon.whatsapp i {
+    color: white !important;
+    font-size: 24px;
+    line-height: 50px; /* Dairənin mərkəzində durması üçün (əgər dairə 50px-dirsə) */
+}
+
+
+.social-icon.telegram {
+    background-color: #0088cc;
+    color: white;
+}
+
+.social-icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    color: white;
+}
+
+.social-icon.wechat {
+    background-color: #7bb32e;
+    color: white;
+}
+
+/* Hover effekti (hamısı üçün eyni qalsın) */
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Yeni Sosial Media Rəngləri */
+.social-icon.telegram {
+    background-color: #0088cc;
+    color: white;
+}
+
+.social-icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    color: white;
+}
+
+.social-icon.wechat {
+    background-color: #7bb32e;
+    color: white;
+}
+
+/* Hover effekti (hamısı üçün eyni qalsın) */
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Testimonials hissəsindəki mətnlərin tündləşdirilməsi */
+#testimonials p, 
+#testimonials span, 
+#testimonials div {
+    color: #222222 !important; /* Çox tünd boz/qara rəng */
+}
+
+/* Əgər Cusdis vidjetini tündləşdirmək istəyirsənsə */
+#cusdis_thread {
+    color: #222222 !important;
+}
+
+.wechat-container {
+    position: relative;
+    display: inline-block;
+}
+
+.wechat-qr-popup {
+    position: absolute;
+    bottom: 60px; /* İkonun üstündə açılması üçün */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+    width: 160px; /* QR kodun ölçüsü */
+    text-align: center;
+}
+
+.wechat-qr-popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.wechat-qr-popup span {
+    display: block;
+    color: #333;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Üzərinə gələndə göstər */
+.wechat-container:hover .wechat-qr-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Mobil cihazlarda toxunanda görünməsi üçün */
+.wechat-container:active .wechat-qr-popup {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wechat-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* WeChat İkonu üçün pointer kursoru */
+#wechatBtn {
+    cursor: pointer;
+}
+
+/* QR Kod Popup - Arxa fonsuz və təmiz */
+.wechat-qr-popup {
+    position: absolute;
+    bottom: 60px; /* İkonun üstündə açılması üçün */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    
+    /* Arxa fon, kənarlıq və kölgələr silindi */
+    background: transparent; 
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    /* İlkin vəziyyətdə gizli */
+    visibility: hidden;
+    opacity: 0;
+    
+    /* Zərif açılış effekti */
+    transition: all 0.3s ease;
+    z-index: 100;
+    width: 160px; /* QR kodun ölçüsü */
+    text-align: center;
+}
+
+/* Popup aktiv olanda (JavaScript ilə əlavə ediləcək class) */
+.wechat-qr-popup.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.wechat-qr-popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* QR kodun künclərini bir az yumşaldaq */
+}
+
+.wechat-qr-popup span {
+    display: block;
+    color: #ffffff; /* Ağ rəng etdim, əgər contact fondu tünddürsə */
+    /* Əgər contact fondu açıqdırsa, rəngi tündləşdir: color: #333; */
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Yazının oxunması üçün xəfif kölgə */
+}
+
+/* Contact bölməsindəki ikon üçün */
+.social-icon.coffee {
+    background-color: #FFDD00; /* Buy Me a Coffee-nin rəsmi rəngi */
+    color: #000000;
+}
+
+/* SOL aşağıda sabit duran düymə */
+.buy-coffee-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Sağı sola dəyişdik */
+    background-color: #FFDD00;
+    color: #000000;
+    padding: 10px 10px 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: all 0.3s ease;
+    border: 2px solid #000;
+}
+
+/* Mobildə düzəliş */
+@media (max-width: 768px) {
+    .coffee-text {
+        display: none; /* Mobildə sadəcə ikon qalsın */
+    }
+    .buy-coffee-fixed {
+        padding: 0;
+        left: 15px; /* Mobildə də solda qalsın */
+        bottom: 15px;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        border-radius: 50%; /* Mobildə tam dairəvi olsun */
+    }
+    .coffee-icon-circle {
+        margin-right: 0;
+        background: transparent; /* Mobildə artıq dairə daxilində dairəyə ehtiyac yoxdur */
+    }
+}
+
+.classroom-container {
+    margin: 20px 0;
+}
+
+.classroom-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #127344; /* Google Classroom Yaşılı */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid #0a4d2e; /* Düyməyə 3D effekti verir */
+}
+
+.classroom-btn i {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #f4b400; /* Loqonun sarı detalı üçün */
+}
+
+.classroom-btn:hover {
+    background-color: #1a8e56;
+    transform: translateY(-2px);
+    border-bottom-width: 2px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.classroom-btn:active {
+    transform: translateY(2px);
+    border-bottom-width: 0;
+    margin-bottom: 4px;
+}
+
+
+/* --- NAVIGATION STRUCTURE --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%; /* Kənarlardan boşluğu azaltdıq ki, yer çoxalsın */
+    background-color: #0d1b2a;
+    position: fixed; /* Yuxarıda sabit qalsın */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 8px; /* Düymələr arası məsafəni optimallaşdırdıq */
+}
+
+/* PC-də Ağ Rəngli Yazılar */
+.nav-list li a {
+    color: #ffffff !important; /* Mütləq ağ rəng */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 11px; /* 30% kiçik şrift (hər şeyin sığması üçün) */
+    white-space: nowrap; /* Yazıların aşağı düşməsini önləyir */
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #3498db !important; /* Üstünə gələndə göyümtül rəng */
+}
+
+/* PC-də Hamburgeri Gizlət */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+}
+
+/* --- MOBİL ÜÇÜN DÜZƏLİŞLƏR --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 2100;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .nav-list {
+        display: none; /* İndi bu SADECE mobildə gizlənəcək */
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #0d1b2a;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1500;
+    }
+
+    .nav-list.active {
+        display: flex !important;
+    }
+
+    .nav-list li {
+        margin: 15px 0;
+    }
+
+    .nav-list li a {
+        font-size: 1.2rem;
+    }
+} /* <--- Media query burada bağlanmalıdır! */
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Rənglər */
+.youtube { background-color: #FF0000; }
+.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+.telegram { background-color: #0088cc; }
+.xiaohongshu { background-color: #ff2442; } /* Xiaohongshu-nun xarakterik qırmızı rəngi */
+
+/* Həm köhnə, həm yeni təqvim üçün mərkəzləmə */
+.calendar-container, #my-cal-inline-60 {
+    max-width: 1000px; /* Bir az daha geniş etmək təqvimi daha oxunaqlı edir */
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pricing-button {
+    display: inline-block;
+    background-color: #ffdd00;
+    color: #000;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pricing-button:hover {
+    background-color: #ffd000;
+    transform: translateY(-2px);
+}
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(260px, 1fr)
+    );
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+.social-icon {
+    font-size: 26px;
+}
+
+.whatsapp-button {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    background: #25D366;
+
+    color: white;
+
+    padding: 14px 18px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    z-index: 999;
+}
+
+#testimonials {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+#cusdis_thread {
+
+    min-height: 900px;
+
+    padding: 20px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.navbar {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 15px 20px;
+
+}
+
+.footer {
+    text-align: center;
+}
+
+
+/* TESTIMONIALS REAL FIX */
+
+#cusdis_thread {
+
+    width: 100%;
+
+    min-height: 900px;
+
+}
+
+/* Cusdis iframe məcburi böyüt */
+
+#cusdis_thread iframe {
+
+    width: 100% !important;
+
+    min-height: 900px !important;
+
+    height: auto !important;
+
+}
+
+/* SUPERPROF BUTTONS — brand style */
+
+.superprof-country-btn {
+
+    display: inline-block;
+
+    background-color: #ff6363;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    margin: 6px;
+
+}
+
+.superprof-country-btn:hover {
+
+    background-color: #ff4b4b;
+
+    transform: translateY(-2px);
+
+}
+
+/* container mərkəzdə */
+
+.superprof-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+/* Hero hissəsinin menyu altında qalmaması üçün yuxarıdan boşluq */
+.hero {
+    padding-top: 100px !important; 
+}
+
+/* Linkə klikləyəndə başlığın menyu altında qalmaması üçün */
+html {
+    scroll-padding-top: 80px;
+}
+
+.social-icon.whatsapp i {
+    color: white !important; /* İkonun mütləq ağ görünməsi üçün */
+    font-size: 24px;         /* Ölçüsünü digərləri ilə eyniləşdir */
+}
+
+/* ===== TESTIMONIALS TEXT FIX ===== */
+
+/* Ümumi yazılar */
+#cusdis_thread,
+#cusdis_thread * {
+
+    color: #111 !important;
+
+}
+
+/* Input sahələri */
+#cusdis_thread input,
+#cusdis_thread textarea {
+
+    color: #111 !important;
+
+    background: #fff !important;
+
+    border: 1px solid #ccc !important;
+
+}
+
+/* Placeholder (Nickname, Email və s.) */
+#cusdis_thread input::placeholder,
+#cusdis_thread textarea::placeholder {
+
+    color: #666 !important;
+
+}
+
+/* Reply, Post düymələri */
+#cusdis_thread button {
+
+    color: white !important;
+
+    background: #111 !important;
+
+    border-radius: 6px;
+
+}
+
+/* Comment text xüsusi olaraq */
+#cusdis_thread .cusdis-comment-content {
+
+    color: #000 !important;
+
+}
+
+/* ===== TARAZ BACKGROUND DESIGN ===== */
+
+#coming-soon {
+
+    position: relative;
+
+    color: white;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+/* Arxa fon şəkil */
+#coming-soon::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: url("taraz-bg.jpg") center/cover no-repeat;
+
+    opacity: 0.25; /* çox vacib */
+
+    z-index: 1;
+
+}
+
+/* Overlay (qaraltma effekt) */
+#coming-soon::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    z-index: 2;
+
+}
+
+/* Content üstdə qalsın */
+#coming-soon * {
+
+    position: relative;
+
+    z-index: 3;
+
+}
+
+/* ===== PRICING CARDS FIX ===== */
+
+.pricing-card {
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+    text-align: left;
+
+}
+
+/* hover effekti */
+.pricing-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+
+}
+
+.pricing-card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.pricing-card li {
+
+    margin-bottom: 8px;
+
+}
+
+.pricing-card li::before {
+
+    content: "✔";
+
+    margin-right: 8px;
+
+    color: #0d6efd;
+
+}
+
+.pricing-card h3 strong {
+
+    background: linear-gradient(90deg, #ff6363, #ff0000);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.pricing-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+.pricing-card {
+
+    width: 280px;
+
+}
+
+
