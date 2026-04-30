@@ -1753,3 +1753,13 @@ html {
     color: #0d6efd;
 
 }
+
+.pricing-card h3 strong {
+
+    background: linear-gradient(90deg, #ff6363, #ff0000);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
