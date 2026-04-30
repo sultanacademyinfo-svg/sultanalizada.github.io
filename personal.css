@@ -1701,3 +1701,29 @@ html {
 
 }
 
+/* ===== PRICING CARDS FIX ===== */
+
+.pricing-card {
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+    text-align: left;
+
+}
+
+/* hover effekti */
+.pricing-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+
+}
