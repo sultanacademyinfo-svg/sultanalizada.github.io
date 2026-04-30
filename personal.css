@@ -1763,3 +1763,21 @@ html {
     -webkit-text-fill-color: transparent;
 
 }
+
+/* ===== PRICING LAYOUT FIX ===== */
+
+.pricing-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+}
