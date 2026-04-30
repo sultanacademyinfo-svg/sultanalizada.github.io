@@ -1781,3 +1781,27 @@ html {
     width: 280px;
 
 }
+
+/* ===== FINAL PRICING FIX (CENTERED GRID) ===== */
+
+.pricing-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;  /* ƏSAS FIX */
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+}
+
+.pricing-card {
+
+    width: 280px;
+
+}
