@@ -1764,20 +1764,20 @@ html {
 
 }
 
-/* ===== PRICING LAYOUT FIX ===== */
-
 .pricing-grid {
 
-    display: grid;
+    display: flex;
 
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    flex-wrap: wrap;
+
+    justify-content: center;
 
     gap: 25px;
 
-    max-width: 1100px;
+}
 
-    margin: 40px auto;
+.pricing-card {
 
-    padding: 0 20px;
+    width: 280px;
 
 }
