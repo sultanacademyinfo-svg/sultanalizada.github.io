@@ -1700,3 +1700,15 @@ html {
     z-index: 3;
 
 }
+
+header > .navbar {
+
+    background: #0d6efd;
+
+}
+
+/* full width effekti üçün */
+header {
+
+    width: 100%;
+}
