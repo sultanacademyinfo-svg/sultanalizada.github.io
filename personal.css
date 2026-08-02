@@ -585,19 +585,6 @@ html, body {
 }
 }
 
-<div class="coffee-container" style="text-align: center; border: 2px dashed #ffdd00;">
-    <h3>Support My Work</h3>
-    <p>If you find my lessons helpful, you can support my work here.</p>
-    
-    <a href="https://buymeacoffee.com/YOURNAME" class="coffee-button" target="_blank">
-        Buy Me a Coffee ☕
-    </a>
-
-    <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
-        <p style="font-size: 13px; color: #777; margin-bottom: 10px;">Scan QR to support quickly 👇</p>
-        <img src="qr-code.png" alt="Donate QR" style="width: 160px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-    </div>
-</div>
 
 /* Premium Paket Özəl Stili */
 .premium-highlight {
@@ -1812,3 +1799,22 @@ body.menu-open {
     background-color: #4752C4;
     transform: scale(1.05);
 }
+
+
+/* PAUZADADIR: Support kartının stilləri
+
+<div class="coffee-container" style="text-align: center; border: 2px dashed #ffdd00;">
+    <h3>Support My Work</h3>
+    <p>If you find my lessons helpful, you can support my work here.</p>
+    
+    <a href="https://buymeacoffee.com/YOURNAME" class="coffee-button" target="_blank">
+        Buy Me a Coffee ☕
+    </a>
+
+    <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <p style="font-size: 13px; color: #777; margin-bottom: 10px;">Scan QR to support quickly 👇</p>
+        <img src="qr-code.png" alt="Donate QR" style="width: 160px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+    </div>
+</div>
+
+*/
