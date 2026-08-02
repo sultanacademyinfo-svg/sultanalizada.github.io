@@ -1801,3 +1801,17 @@ body.menu-open {
     align-items: center;     /* Şaquli olaraq ortalayır */
     width: 100%;             /* Bütöv eni tutmasını təmin edir */
 }
+
+.hero-logo-link {
+    display: block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* YENİ ƏLAVƏ: Yuxarıdan 30px məsafə qoyur (istəyinə görə 20px və ya 40px edə bilərsən) */
+    margin-top: 30px; 
+}
