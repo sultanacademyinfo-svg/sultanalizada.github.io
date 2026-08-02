@@ -1766,17 +1766,33 @@ body.menu-open {
 
 /* Link teqinin özünü düzəltmək */
 .hero-logo-link {
-    display: block;          /* inline-block əvəzinə block verdik */
-    text-decoration: none; /* Alt xətti götürsün */
-    border: none; /* Kənar xətti götürsün */
-    outline: none; /* Fokus kənarını götürsün */
+    display: block;          /* Yaxşı təcrübədir */
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;         /* Maus üzərinə gələndə əl işarəsi olsun */
+    
+    /* YENİ ƏLAVƏLƏR: */
+    width: fit-content;      /* Linkin enini sadəcə içindəki şəklin eni qədər edir */
+    margin-left: auto;       /* Mərkəzləməni təmin etmək üçün mühümdür */
+    margin-right: auto;
 }
 
-/* Şəklin ölçüsünü qorumaq (artıq mövcuddursa, dəyişməyə ehtiyac yoxdur) */
+/* Şəklin ilkin vəziyyəti */
 .hero-logo-img {
-    max-width: 300px; /* Və ya sənin mövcud ölçün neçədirsə */
+    max-width: 300px;
     height: auto;
-    display: block; /* Şəkil linkin içini tam doldursun */
+    display: block;
+    
+    /* YENİ ƏLAVƏ: Animasiyanın səlis olması üçün keçid müddəti (0.3 saniyə) */
+    transition: transform 0.3s ease; 
+}
+
+/* Maus üzərinə gələndə tətbiq olunacaq effekt */
+.hero-logo-link:hover .hero-logo-img {
+    /* transform: scale(1.1); - Şəkli 10% (1.1 dəfə) böyüdür.
+       İstəyinə görə 1.05 (5%) və ya daha çox edə bilərsən. */
+    transform: scale(1.05); 
 }
 
 .hero-content {
