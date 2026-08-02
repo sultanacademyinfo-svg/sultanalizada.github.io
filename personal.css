@@ -1778,3 +1778,10 @@ body.menu-open {
     height: auto;
     display: block; /* Şəkil linkin içini tam doldursun */
 }
+
+.hero-content {
+    display: flex;
+    justify-content: center; /* Üfüqi olaraq tən ortaya gətirir */
+    align-items: center;     /* Şaquli olaraq ortalayır */
+    width: 100%;             /* Bütöv eni tutmasını təmin edir */
+}
