@@ -1757,3 +1757,8 @@ body.menu-open {
     position: relative;
     top: 25px; /* Şəkli cari mövqeyindən 25px aşağı sürüşdürür */
 }
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
