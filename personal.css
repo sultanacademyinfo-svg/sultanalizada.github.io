@@ -1790,3 +1790,25 @@ body.menu-open {
 .hero-logo-link:hover .hero-logo-img {
     transform: scale(1.05);
 }
+
+/* FIXED DISCORD BUTTON (SOL AŞAĞI KÜNC) */
+.discord-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #5865F2;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #4752C4;
+    transform: scale(1.05);
+}
