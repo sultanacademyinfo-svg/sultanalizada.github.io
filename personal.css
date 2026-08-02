@@ -1772,7 +1772,7 @@ body.menu-open {
     width: fit-content;      /* Klik sahəsini sadəcə şəkillə məhdudlaşdırır */
     margin-left: auto;       /* Mərkəzləmə */
     margin-right: auto;
-    margin-top: 60px !important;
+    margin-top: 90px !important;
     text-decoration: none;
     border: none;
     outline: none;
