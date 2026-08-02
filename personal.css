@@ -1762,3 +1762,19 @@ body.menu-open {
     width: 24px;
     height: 24px;
 }
+
+
+/* Link teqinin özünü düzəltmək */
+.hero-logo-link {
+    display: inline-block; /* Şəklin ətrafını tam tutsun */
+    text-decoration: none; /* Alt xətti götürsün */
+    border: none; /* Kənar xətti götürsün */
+    outline: none; /* Fokus kənarını götürsün */
+}
+
+/* Şəklin ölçüsünü qorumaq (artıq mövcuddursa, dəyişməyə ehtiyac yoxdur) */
+.hero-logo-img {
+    max-width: 300px; /* Və ya sənin mövcud ölçün neçədirsə */
+    height: auto;
+    display: block; /* Şəkil linkin içini tam doldursun */
+}
