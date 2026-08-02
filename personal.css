@@ -1752,54 +1752,41 @@ body.menu-open {
 }
 
 
-/* Link teqinin özünü düzəltmək */
-.hero-logo-link {
-    display: block;          /* Yaxşı təcrübədir */
-    text-decoration: none;
-    border: none;
-    outline: none;
-    cursor: pointer;         /* Maus üzərinə gələndə əl işarəsi olsun */
-    
-    /* YENİ ƏLAVƏLƏR: */
-    width: fit-content;      /* Linkin enini sadəcə içindəki şəklin eni qədər edir */
-    margin-left: auto;       /* Mərkəzləməni təmin etmək üçün mühümdür */
-    margin-right: auto;
-}
+/* ==========================================
+   HERO SECTION & LOGO BUTTON (TƏMİZ KOD)
+   ========================================== */
 
-/* Şəklin ilkin vəziyyəti */
-.hero-logo-img {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    
-    /* YENİ ƏLAVƏ: Animasiyanın səlis olması üçün keçid müddəti (0.3 saniyə) */
-    transition: transform 0.3s ease; 
-}
-
-/* Maus üzərinə gələndə tətbiq olunacaq effekt */
-.hero-logo-link:hover .hero-logo-img {
-    /* transform: scale(1.1); - Şəkli 10% (1.1 dəfə) böyüdür.
-       İstəyinə görə 1.05 (5%) və ya daha çox edə bilərsən. */
-    transform: scale(1.05); 
+.hero-section {
+    width: 100%;
 }
 
 .hero-content {
     display: flex;
-    justify-content: center; /* Üfüqi olaraq tən ortaya gətirir */
-    align-items: center;     /* Şaquli olaraq ortalayır */
-    width: 100%;             /* Bütöv eni tutmasını təmin edir */
+    justify-content: center; /* Üfüqi mərkəzləmə */
+    align-items: center;     /* Şaquli mərkəzləmə */
+    width: 100%;
 }
 
 .hero-logo-link {
     display: block;
+    width: fit-content;      /* Klik sahəsini sadəcə şəkillə məhdudlaşdırır */
+    margin-left: auto;       /* Mərkəzləmə */
+    margin-right: auto;
+    margin-top: 30px;        /* Loqonu menyudan 30px aşağı itələyir */
     text-decoration: none;
     border: none;
     outline: none;
     cursor: pointer;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* YENİ ƏLAVƏ: Yuxarıdan 30px məsafə qoyur (istəyinə görə 20px və ya 40px edə bilərsən) */
-    margin-top: 30px; 
+}
+
+.hero-logo-img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Hover animasiyasını səlis edir */
+}
+
+/* Maus loqonun üstünə gələndə 5% böyümə effekti */
+.hero-logo-link:hover .hero-logo-img {
+    transform: scale(1.05);
 }
