@@ -1766,7 +1766,7 @@ body.menu-open {
 
 /* Link teqinin özünü düzəltmək */
 .hero-logo-link {
-    display: inline-block; /* Şəklin ətrafını tam tutsun */
+    display: block;          /* inline-block əvəzinə block verdik */
     text-decoration: none; /* Alt xətti götürsün */
     border: none; /* Kənar xətti götürsün */
     outline: none; /* Fokus kənarını götürsün */
