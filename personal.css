@@ -1745,18 +1745,6 @@ body.menu-open {
     }
 
 
-#home img {
-    margin-top: 30px; /* Piksel dəyərini istəyinə görə dəyiş */
-}
-
-#home {
-    padding-top: 40px; /* Fon daxilində yuxarıdan boşluq yaradır */
-}
-
-#home img {
-    position: relative;
-    top: 25px; /* Şəkli cari mövqeyindən 25px aşağı sürüşdürür */
-}
 
 .social-icon svg {
     width: 24px;
