@@ -1739,43 +1739,6 @@ body.menu-open {
 }
 
 
-/* ==========================================
-   HERO SECTION & LOGO BUTTON (TƏMİZ KOD)
-   ========================================== */
-
-.hero-section {
-    width: 100%;
-}
-
-.hero-content {
-    display: flex;
-    justify-content: center; /* Üfüqi mərkəzləmə */
-    align-items: center;     /* Şaquli mərkəzləmə */
-    width: 100%;
-}
-
-/* FIXED DISCORD BUTTON (SOL AŞAĞI KÜNC) */
-.discord-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: #5865F2;
-    color: #ffffff;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.discord-button:hover {
-    background-color: #4752C4;
-    transform: scale(1.05);
-}
-
 
 /* PAUZADADIR: Support kartının stilləri
 
@@ -1796,16 +1759,87 @@ body.menu-open {
 */
 
 
+/* ==========================================
+   HERO SECTION & DISCORD WIDGET STYLES
+   ========================================== */
+
 .hero-section {
-  display: flex;
-  justify-content: center; /* Üfüqi mərkəzləşdirmə */
-  align-items: center;     /* Şaquli mərkəzləşdirmə */
-  width: 100%;
-  padding: 40px 0;         /* Yuxarıdan və aşağıdan ara məsafəsi */
+    width: 100%;
+    padding: 100px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-section iframe {
-  max-width: 90%;          /* Mobil ekranlarda sıxılma qarşısını alır */
-  border-radius: 12px;     /* Küncləri yumşaldır */
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* Yüngül kölgə effekti */
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hero-logo-link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.hero-logo-img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero-logo-link:hover {
+    transform: scale(1.03);
+}
+
+.hero-discord-widget {
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 80px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-logo-img {
+        max-width: 260px;
+    }
+}
+
+/* FIXED DISCORD BUTTON (Əgər HTML-də həmin düymə varsa, bu aşağıdakını saxlayın) */
+.discord-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #5865F2;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #4752C4;
+    transform: scale(1.05);
 }
