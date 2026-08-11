@@ -1754,30 +1754,6 @@ body.menu-open {
     width: 100%;
 }
 
-.hero-logo-link {
-    display: block;
-    width: fit-content;      /* Klik sahəsini sadəcə şəkillə məhdudlaşdırır */
-    margin-left: auto;       /* Mərkəzləmə */
-    margin-right: auto;
-    margin-top: 90px !important;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.hero-logo-img {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease; /* Hover animasiyasını səlis edir */
-}
-
-/* Maus loqonun üstünə gələndə 5% böyümə effekti */
-.hero-logo-link:hover .hero-logo-img {
-    transform: scale(1.05);
-}
-
 /* FIXED DISCORD BUTTON (SOL AŞAĞI KÜNC) */
 .discord-button {
     position: fixed;
@@ -1818,3 +1794,18 @@ body.menu-open {
 </div>
 
 */
+
+
+.hero-section {
+  display: flex;
+  justify-content: center; /* Üfüqi mərkəzləşdirmə */
+  align-items: center;     /* Şaquli mərkəzləşdirmə */
+  width: 100%;
+  padding: 40px 0;         /* Yuxarıdan və aşağıdan ara məsafəsi */
+}
+
+.hero-section iframe {
+  max-width: 90%;          /* Mobil ekranlarda sıxılma qarşısını alır */
+  border-radius: 12px;     /* Küncləri yumşaldır */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* Yüngül kölgə effekti */
+}
