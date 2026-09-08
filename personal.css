@@ -141,21 +141,7 @@ background-color: #1ebe5d;
 
 }
 
-.testimonial {
 
-background-color: white;
-
-padding: 20px;
-
-margin: 20px auto;
-
-max-width: 600px;
-
-border-radius: 10px;
-
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-
-}
 @media (max-width: 768px) {
 
 .profile-photo {
@@ -229,13 +215,6 @@ transform: scale(1.05);
      
 }
 
-/* TESTIMONIALS - bigger visible area */
-#cusdis_thread {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  min-height: 600px;
-}
 
 }
 
@@ -245,27 +224,6 @@ transform: scale(1.05);
     min-height: 500px;
     padding: 10px;
   }
-
-
-/* TESTIMONIALS FULL VIEW FIX */
-
-#cusdis_thread {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Cusdis internal container */
-#cusdis_thread iframe {
-  width: 100% !important;
-  height: 900px !important;
-  max-height: none !important;
-}
-
-/* Remove inner scroll feeling */
-#cusdis_thread .cusdis-container {
-  max-height: none !important;
-}
 
 
 /* --- YENİ OPTİMALLAŞDIRMA --- */
@@ -333,7 +291,7 @@ html {
 }
 
 /* 5. Calendly və Testimonials mərkəzləşdirmə */
-.calendly-full-container, #cusdis_thread {
+.calendly-full-container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -752,17 +710,6 @@ html, body {
     opacity: 0.9;
 }
 
-/* Testimonials hissəsindəki mətnlərin tündləşdirilməsi */
-#testimonials p, 
-#testimonials span, 
-#testimonials div {
-    color: #222222 !important; /* Çox tünd boz/qara rəng */
-}
-
-/* Əgər Cusdis vidjetini tündləşdirmək istəyirsənsə */
-#cusdis_thread {
-    color: #222222 !important;
-}
 
 .wechat-container {
     position: relative;
@@ -1042,20 +989,6 @@ html, body {
     z-index: 999;
 }
 
-#testimonials {
-
-    max-width: 1000px;
-
-    margin: 0 auto;
-}
-
-#cusdis_thread {
-
-    min-height: 900px;
-
-    padding: 20px;
-
-}
 
 img {
     max-width: 100%;
@@ -1065,29 +998,6 @@ img {
 
 .footer {
     text-align: center;
-}
-
-
-/* TESTIMONIALS REAL FIX */
-
-#cusdis_thread {
-
-    width: 100%;
-
-    min-height: 900px;
-
-}
-
-/* Cusdis iframe məcburi böyüt */
-
-#cusdis_thread iframe {
-
-    width: 100% !important;
-
-    min-height: 900px !important;
-
-    height: auto !important;
-
 }
 
 /* SUPERPROF BUTTONS — brand style */
@@ -1160,116 +1070,6 @@ html {
     font-size: 24px;         /* Ölçüsünü digərləri ilə eyniləşdir */
 }
 
-/* ===== TESTIMONIALS TEXT FIX ===== */
-
-/* Ümumi yazılar */
-#cusdis_thread,
-#cusdis_thread * {
-
-    color: #111 !important;
-
-}
-
-/* Input sahələri */
-#cusdis_thread input,
-#cusdis_thread textarea {
-
-    color: #111 !important;
-
-    background: #fff !important;
-
-    border: 1px solid #ccc !important;
-
-}
-
-/* Placeholder (Nickname, Email və s.) */
-#cusdis_thread input::placeholder,
-#cusdis_thread textarea::placeholder {
-
-    color: #666 !important;
-
-}
-
-/* Reply, Post düymələri */
-#cusdis_thread button {
-
-    color: white !important;
-
-    background: #111 !important;
-
-    border-radius: 6px;
-
-}
-
-/* Comment text xüsusi olaraq */
-#cusdis_thread .cusdis-comment-content {
-
-    color: #000 !important;
-
-}
-
-/* ===== TARAZ BACKGROUND DESIGN ===== */
-
-#coming-soon {
-
-    position: relative;
-
-    color: white;
-
-    text-align: center;
-
-    overflow: hidden;
-
-}
-
-/* Arxa fon şəkil */
-#coming-soon::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: url("taraz-bg.jpg") center/cover no-repeat;
-
-    opacity: 0.25; /* çox vacib */
-
-    z-index: 1;
-
-}
-
-/* Overlay (qaraltma effekt) */
-#coming-soon::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.5);
-
-    z-index: 2;
-
-}
-
-/* Content üstdə qalsın */
-#coming-soon * {
-
-    position: relative;
-
-    z-index: 3;
-
-}
 
 .logo {
     white-space: nowrap;
