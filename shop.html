@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sultan Academy - Rewards & Shop</title>
+  <link rel="stylesheet" href="css/shop.css">
+  
+  <!-- Firebase Compatibility SDK-lar -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+  <!-- Header & User Balance Banner -->
+  <header class="shop-header">
+    <div class="header-container">
+      <h1>🎁 Sultan Academy Rewards</h1>
+      
+      <div class="user-card" id="userCard">
+        <div id="loginForm" class="login-box">
+          <input type="text" id="userInput" placeholder="Discord Adın və ya Email..." />
+          <button onclick="loginUser()">Daxil Ol</button>
+        </div>
+        
+        <div id="balanceDisplay" class="balance-box" style="display:none;">
+          <span class="welcome-text">Xoş gəldin, <b id="displayUsername"></b>!</span>
+          <div class="pts-badge">💰 <span id="userPoints">0</span> Sultan Points</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="shop-container">
+    <div class="actions-bar">
+      <button class="earn-btn" onclick="openOfferwall()">⚡ Reklam İzlə / Xal Qazan</button>
+    </div>
+
+    <h2 class="section-title">🛍️ Mükafatlar və Məhsullar</h2>
+    <div class="products-grid" id="productsGrid">
+      <p class="status-msg">Məhsullar yüklənir...</p>
+    </div>
+  </main>
+
+  <!-- Modal for AdGate / Offerwall -->
+  <div id="offerwallModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeOfferwall()">&times;</span>
+      <h3>Reklamları İzlə / Tapşırıqları Et ➔ Xal Qazan</h3>
+      <div id="offerwallContainer">
+        <p>Offerwall yüklənir...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/shop.js"></script>
+</body>
+</html>
