@@ -1,11 +1,12 @@
 // 1. Firebase Konfiqurasiyası
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDiO9siqg8iGn4_PF_pUrRGgHqXYTNQ0ns",
+  authDomain: "sultan-academy-shop.firebaseapp.com",
+  projectId: "sultan-academy-shop",
+  storageBucket: "sultan-academy-shop.firebasestorage.app",
+  messagingSenderId: "119350956459",
+  appId: "1:119350956459:web:c6621856d99499a8a4c2ee",
+  measurementId: "G-5VNPMK56XY"
 };
 
 // Initialize Firebase
